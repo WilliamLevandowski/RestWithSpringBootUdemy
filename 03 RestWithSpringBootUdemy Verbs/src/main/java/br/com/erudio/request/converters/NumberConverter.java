@@ -1,11 +1,8 @@
 package br.com.erudio.request.converters;
 
-import org.springframework.stereotype.Service;
-
-@Service
 public class NumberConverter {
 
-	public Double convertToDouble(String strNumber) {
+	public static double convertToDouble(String strNumber) {
 
 		if (strNumber == null) {
 			return 0D;
@@ -20,7 +17,7 @@ public class NumberConverter {
 		return 0D;
 	}
 
-	public boolean isNumeric(String strNumber) {
+	public static boolean isNumeric(String strNumber) {
 
 		if (strNumber == null) {
 			return false;
